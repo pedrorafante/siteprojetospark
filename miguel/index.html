@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de cartão</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <script src="/script.js"></script>
+
+    <div id="bloco">
+        <div id="input">
+            <p id="nome">Nome: <input type="text" id="inputnome" size="40" oninput="validar()"></p> 
+            <span id="span" oninput="validar()">Insira seu nome</span>
+
+            <p id="profissao">Profissão: <input type="text" id="inputprofissao" size="36"></p> 
+
+            <p id="contato">Contato: <input type="tel" id="inputcontato" name="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="38" required oninput="validarcontato()"</p>
+            <span id="spancontato">Insira seu contato</span>
+
+            <p id="email">Email: <input type="email" name="" id="inputemail" size="41" oninput="validaremail()"></p>   
+            <span id="spanemail">Insira seu email</span>
+
+            <p> Sexo: <br>
+                <input id="radio" type="radio" name="radsex" id="masc" checked> 
+                <label for="masc">Masculino</label>
+                <input id="radio" type="radio" name="radsex" id="fem">
+                <label for="masc">Feminino</label>
+            </p>  
+        </div>
+
+        <p id="nacionalidade">Nacionalidade: 
+            <select name="" id="opcaoNacionalidades" > 
+                <option value="Canadense">Canadá</option>
+                <option value="Francês" >França</option>
+                <option value="Brasileiro" selected> Brasil</option>
+            </select>
+        </p>
+
+        <input id="button" type="button" value="Criar cartão" onclick="CriarCartao()">
+        <input id="buttonBaixar" type="button" value="Baixar cartão" onclick="baixarCartao()">
+        
+    </div>
+
+    <footer>@Miguel</footer>
+    
+
+</body>
+</html>
