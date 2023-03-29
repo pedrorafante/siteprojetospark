@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="shortcut icon" href="liv.png" type="image/x-icon">
+        <title>A Lojinha da Leitora</title>
+        <link rel="stylesheet" type="text/css" href="cadastro.css">
+      </head>
+      <body style= "background-color: rgb(250, 222, 243);">
+        <header>
+            <img src="liv.png" alt="logo" width="90" height="90">
+            <div class="container-logo">
+                <div class="logo-imagem" > </div>
+                    <div class="logo-texto">
+                        <h1>A Lojinha da Leitora</h1>
+                    </div>
+            </div>
+          <nav>
+            <ul>
+							<li>
+								<a role="menuitem" aria-current="page" href="tela_inicial.html"
+								class"nav-link btn">Início</a>
+						</li>
+						<li>
+								<a role="menuitem" aria-current="page" href="tela_livros.html"
+								class"nav-link btn">Livros</a>
+						</li>
+						<li>
+								<a role="menuitem" aria-current="page" href="tela_lojinha.html"
+								class"nav-link btn">Lojinha</a>
+						</li>
+						<li>
+								<a role="menuitem" aria-current="page" href="tela_login.html"
+								class"nav-link btn">Login</a>
+						</li>
+						<li>
+								<a role="menuitem" aria-current="page" href="tela_cadastro.html"
+								class"nav-link btn">Cadastro</a>
+						</li>
+						</ul>
+          </nav>
+        </header>
+<body>
+<center><h2><p>Formulário de Cadastro</p></h2><center><fieldset>
+	<form> 
+<center>
+		<b><i>Nome Completo: </b></i> <input type="test" name="nome" id="txtNome">		<br></br>
+		<b><i>Data de Nascimento: </b></i> <input type="date" name="datanascimento" min="1950-01-01" max="2020-12-31">
+	<legend>
+		<br>
+	<b><i>Gênero:</b></i>
+	</legend>
+	<input type="radio" name="genero" value="Masculino" > Masculino
+		<input type="radio" name="genero" value="Feminino" > Feminino
+		<input type="radio" name="genero" value="Vazio" > Prefiro não informar
+		<br></br>
+		<b><i>E-mail:</b></i> <input type="email" required multiple>
+		<br></br>
+		<b><i>Estado civil: </b></i>
+		<select name="estado">
+		  <option value="Solteiro (a)">Solteiro (a)</option>
+		  <option value="Casado(a)">Casado (a) </option>
+		  <option value="Divorciado (a)"> Divorciado (a)</option>
+		  <option value="Viúvo (a)"> Viúvo (a)</option>
+		</select name="estado">
+        <br> </br>	
+		<legend>
+			<b><i>Selecione um ou mais gêneros de interesse:</b></i><br>
+		</legend>
+		<input type="checkbox" name="generoLivro" value="1" > Ação
+		<input type="checkbox" name="generoLivro" value="2" > Aventura
+		<input type="checkbox" name="generoLivro" value="3" > Contos
+        <input type="checkbox" name="generoLivro" value="4" > Didáticos
+		<input type="checkbox" name="generoLivro" value="5" > Ficção 
+		<input type="checkbox" name="generoLivro" value="6" > Gibis
+		<input type="checkbox" name="generoLivro" value="7" > Infantil
+        <input type="checkbox" name="generoLivro" value="8" > Poesia
+		<input type="checkbox" name="generoLivro" value="9" > Religiosos
+		<input type="checkbox" name="generoLivro" value="10" > Romance
+		<br></br>
+
+		<b><i>O quanto você ama livros?</b></i> <input type="range" name="barra" required min="0" max"5000" step="1">
+        <br> </br>
+
+		<legend>	
+		<b><i>Crie sua senha:</b></i>		<br></br>
+		</legend>
+		<b><i>Senha</b></i> <input type="password" name="senha">
+		<b><i>Confirmação</b></i> <input type="password" name="confirmação"><br> </br>
+		<h3> <b><i>Deixe um comentário para a gente:</b></i> </h3> 
+		<textarea cols="60" rows="10"></textarea>
+		<input type="submit" value="Enviar"></fieldset>
+	</form></center>
+    <footer>
+        <hr size= "2" color= black>
+		<p><b>A Lojinha da Leitora ®</b></p>
+    </footer>
+</body>
+</html>

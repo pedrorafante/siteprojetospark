@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="liv.png" type="image/x-icon">
+      <title>A Lojinha da Leitora</title>
+      <link rel="stylesheet" href="login.css" />
+      <script type=" text/javascript"> "src= script.js" </script>
+    </head>
+    <body style= "background-color: rgb(250, 222, 243);">
+      
+  </head>
+
+  <body>
+    <header>
+      <img src="liv.png" alt="logo" width="90" height="90">
+      <div class="container-logo">
+          <div class="logo-imagem" > </div>
+              <div class="logo-texto">
+                  <h1>A Lojinha da Leitora</h1>
+              </div>
+      </div>
+    <nav>
+      <ul>
+        <li>
+          <a role="menuitem" aria-current="page" href="tela_inicial.html"
+          class"nav-link btn">Início</a>
+      </li>
+      <li>
+          <a role="menuitem" aria-current="page" href="tela_livros.html"
+          class"nav-link btn">Livros</a>
+      </li>
+      <li>
+          <a role="menuitem" aria-current="page" href="tela_lojinha.html"
+          class"nav-link btn">Lojinha</a>
+      </li>
+      <li>
+          <a role="menuitem" aria-current="page" href="tela_login.html"
+          class"nav-link btn">Login</a>
+      </li>
+      <li>
+          <a role="menuitem" aria-current="page" href="tela_cadastro.html"
+          class"nav-link btn">Cadastro</a>
+      </li>
+      </ul>
+    </nav>
+  </header>
+ 
+  </section> 
+  
+    <form onsubmit="login(event)">
+      <label for="usuario">Usuário:</label>
+      <input type="email" id="usuario" />
+  
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" />
+      <button type="submit">Entrar</button>
+    </form>
+
+    <!-- Criamos um form para o login utilizando um tipo de 
+        interação (submit) para o bortão. Esse tipo envia o
+         formulário e o formulário chama a função passada no 
+         atributo onsubmit -->
+
+    <script src="./script.js"></script>
+    <!-- ./ indica que o arquivo está na mesma pasta, caminho da pasta -->
+  </body>
+  <footer>
+    <hr size= "2" color= black>
+<p><b>A Lojinha da Leitora ®</b></p>
+</footer>
+</html>
