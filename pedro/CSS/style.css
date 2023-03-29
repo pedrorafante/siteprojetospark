@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #1640a7;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: black;
+    color: #F6F6F6;
+}
+
+.menu:hover{
+    color: var(--cor-secundaria);
+}
+.cabecalho{
+    padding: 5% 0% 0% 15%;
+}
+
+.menu{
+    display: flex;
+    gap: 80px;
+}
+
+.menu_link{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600px;
+    font-size: 24px;
+    color: #1640a7;
+    text-decoration: none;
+}
+
+.titulo-destaque:hover{
+    background-color: gray;
+}
+
+.apresentacao {
+    padding: 5% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.autor{
+    font-size: 24px;
+    text-align: end;
+    gap: 40px;
+}
+
+.titulo {
+    font-size: 36px;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.texto {
+    font-size: 20px;
+    font-family: 'Montserrat', 'sans-serif';
+    width: 500px;
+}
+
+.links {
+    gap: 32px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    color: #F6F6F6;
+    border: 2px solid #1640a7;
+    width: 378px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-family:'Roboto', 'sans-serif';
+}
+
+.link:hover{
+    background-color: #272727;   
+}
+
+.rodape{
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400px;
+    text-align: center;
+    color: #000;
+    background-color:#1640a7;
+    padding: 24px;
+}
+
+.foto{
+    border-radius: 50%;
+}
+.menu_link:hover {
+    background-color: #272727; 
+}
