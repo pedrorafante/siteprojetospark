@@ -1,0 +1,248 @@
+:root {
+    --teal-050: #effcf6;
+    --teal-100: #c6f7e2;
+    --teal-200: #8eedc7;
+    --teal-300: #65d6ad;
+    --teal-400: #3ebd93;
+    --teal-500: #27ab83;
+    --teal-600: #199473;
+    --teal-700: #147d64;
+    --teal-800: #0c6b58;
+    --teal-900: #014d40;
+    --blue-grey-050: #f0f4f8;
+    --blue-grey-100: #d9e2ec;
+    --blue-grey-200: #bcccdc;
+    --blue-grey-300: #9fb3c8;
+    --blue-grey-400: #829ab1;
+    --blue-grey-500: #627d98;
+    --blue-grey-600: #486581;
+    --blue-grey-700: #334e68;
+    --blue-grey-800: #243b53;
+    --blue-grey-900: #102a43;
+  }
+  
+  html {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 125%;
+    line-height: 1.4;
+    font-weight: 400;
+    color: var(--blue-grey-900);
+  }
+  
+  body {
+    min-height: 100vh;
+    background: rgba(255, 192, 203, 0.562);
+  }
+  
+  main {
+    max-width: max-content;
+    margin: 3em auto 0 auto; 
+    padding: 1.5em;
+    background-color: rgba(214, 235, 253, 0.637);
+    border: 2px solid palevioletred;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-top: 5%;
+  }
+
+  fieldset{
+    background-color: rgba(255, 192, 203, 0.466);
+   border-color: pink;
+   margin: 5px;
+   border-width: 10px;
+   max-width: 1200;
+   height: 570px;
+   border-radius: 8px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   margin-top: -32px;
+  }
+  
+/* declarando fontes */
+
+@font-face {
+    font-family: 'lombardia';
+    src: url(lombardiafont.otf);}
+
+@font-face {
+  font-family: 'staykids';
+  src: url(staykidsfont.ttf);
+}
+
+   legend{
+    color: rgb(212, 95, 134);
+    text-align: center;
+    font-family: 'lombardia';
+}
+
+  .text{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: 'staykids';
+    margin-top: -5%;
+  }
+ 
+#botaomenu{
+    border-top: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: crimson;
+    border-radius: 8px;
+    background-color: rgba(255, 192, 203, 0.589); 
+    border: none;
+    cursor: pointer;
+}
+
+/* .botaotema{
+  border-top: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: crimson;
+    border-radius: 8px;
+    background-color: rgba(255, 192, 203, 0.589); 
+    border: none;
+    cursor: pointer;
+} */
+
+summary{
+  border-top: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(218, 44, 151, 0.815);
+  border-radius: 8px;
+  background-color: rgba(241, 136, 201, 0.562); 
+  border: none;
+  cursor: pointer;
+  float: left;
+  margin-top: -27%;
+}
+
+/* Botoes do summary */
+#tema1{
+  position: absolute;
+  margin-top: 2%;
+  background-color: rgba(241, 136, 201, 0.562);
+}
+#tema2{
+  position: absolute;
+  margin-top: 7%;
+  background-color:  rgba(241, 136, 201, 0.562);
+}
+#tema3{
+  position: absolute;
+  margin-top: 12%;
+  background-color: rgba(241, 136, 201, 0.562);
+}
+#tema4{
+  position: absolute;
+  margin-top: 17%;
+  background-color: rgba(241, 136, 201, 0.562);
+}
+
+.pochaccosit{
+    margin-top: -41%;
+    float: right;
+}
+
+.pochaccof{
+  margin-top: -1%;
+    margin-left: 370px;
+    /* opacity: 100; */
+}
+
+.pochaccob{
+  margin-top: -9%;
+  float: right;
+  margin-right: -5px;
+}
+
+.pochaccoj{
+  margin-top: -22%;
+  margin-left: -10px;
+  opacity: 50%;
+}
+
+.coracaopreto{
+  margin-top: -32%;
+}
+
+.coracaopreto2{
+  float: right;
+  margin-top: -30%;
+}
+
+.coracaov{
+  float: right;
+  margin-right: 17%;
+  margin-top: -40%;
+}
+
+.coracaov2{
+  float: right;
+  margin-right: 19%;
+  margin-top: -36%;
+}
+
+.extrap{
+  float: left;
+  margin-left: 200px;
+  margin-top: -11%;
+}
+
+  .month-indicator {
+    color: var(--blue-grey-700);
+    text-align: center;
+    font-weight: 500;
+    /* font-family: 'staykids';
+    font-size: 20px; */
+  }
+  
+  .day-of-week,
+  .date-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .day-of-week {
+    margin-top: 1.25em;
+    font-family: 'staykids';
+  }
+  
+  .day-of-week > * {
+    font-size: 0.7em;
+    color: var(--blue-grey-400);
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+    text-align: center;
+  }
+  
+  /* Dates */
+  .date-grid {
+    margin-top: 0.5em;
+  }
+  
+  /* Positioning the first day */
+  .date-grid button:first-child {
+    grid-column: 6;
+  }
+  
+  .date-grid button {
+    position: relative;
+    border: 0;
+    width: 4.5ch;
+    height: 4.5ch;
+    border-radius: 50%;
+    background-color: transparent;
+    color: var(--blue-grey-600);
+  }
+  
+  .date-grid button:hover,
+  .date-grid button:focus {
+    outline: none;
+    background-color: var(--blue-grey-050);
+    color: var(--blue-grey-700);
+  }
+  
+  .date-grid button:active,
+  .date-grid button.is-selected {
+    background-color: var(--teal-100);
+    color: var(--teal-900);
+  }
+

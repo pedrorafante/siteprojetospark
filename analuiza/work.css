@@ -1,0 +1,139 @@
+
+html,body {
+    /* position: fixed; */
+     display: flex; 
+    flex-flow: column;
+    background-color:rgb(238, 183, 226);
+    gap: 5px;
+}
+
+
+.emColuna {
+    display: flex;
+    gap: 5px;
+}
+
+.emLinha {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+}
+
+
+.emColuna div, .emLinha div {
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    color: rgb(0,0,0);
+    font-size: 25px;
+    font-family: 'staykids';
+}
+div#Top{
+    border: 3px solid black;
+    background-color:rgb(152,255,152);
+    margin-right: 10px;
+    border-color: black;
+    text-align: center;
+    border-radius: 15%;
+    
+}
+div#picture {
+    border: 3px solid rgb(88, 0, 100);
+     background-image: url(3ed566288b51dac98fed94e867ffb64d-removebg-preview.png); 
+    /* opacity: 0.2; */
+    width: 1286px;
+    height: 580px;
+
+    background-position: center;
+    position:center;
+    border-radius: 5%;
+}
+
+
+div#Below{
+    border: 3px solid black;
+    background-color:rgb(152,255,152);
+    margin-right: 10px;
+}
+h1#cad{
+    text-align: center;
+    color: rgb(72, 3, 75);
+    text-shadow: 90px;
+    
+}
+form#f1{ 
+    text-align: left;
+    opacity: 100%;
+}
+form#f2{
+    float: right;
+    margin-right: 30px;
+    margin-top: -32%;
+    
+}
+
+h1#img{
+    font-family:'staykids' ;
+            src: url('Stay Kids.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            text-align: center;
+}
+#but{
+    font-family: 'staykids';
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    background-color: rgba(238, 130, 238, 0.274);
+    border-color: rgba(238, 130, 238, 0.623);
+    border-radius: 35%;
+}
+
+#but3{
+    font-family: 'staykids';
+    position: absolute;
+    width: 125px;
+    height: 50px;
+    background: none;
+    border:none;
+    font-size: 14px;
+    left: 74%;
+    top: 49%;
+    }
+
+#r2{
+    position: absolute;
+    left: 200px;
+}
+#txtNome{
+    width: 260px;
+}
+#txtSobrenome{
+    width: 220px;
+}
+#txtUsuario{
+    width: 246px; ;
+}
+#txtEmail{
+    width: 257px;
+
+}
+#txtSenha{
+    width: 256px;
+}
+#txtSenha2{
+    width: 257.5px;
+}
+#but2{
+    font-family: 'staykids';
+    position: absolute;
+    width: 130px;
+    height: 50px;
+    left: 1120px;
+    top:50%;
+    background-color: rgba(238, 130, 238, 0.274);
+    border-color: rgba(238, 130, 238, 0.623);
+    border-radius: 35%;
+}
+html{
+    position: fixed;
+}

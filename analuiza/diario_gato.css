@@ -1,0 +1,191 @@
+
+html,body{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(250, 128, 114, 0.534);
+}
+
+
+@font-face {
+    font-family:'staykids';
+    src: url(Stay\ Kids.ttf);
+}
+
+i{
+    position: absolute;
+    font-family:'staykids';
+    /* color: rgba(19, 63, 18, 0.856); */
+    left: 3%;
+    top: 3%;
+}
+
+
+
+#t2{
+position: absolute;
+left: 88%;
+top: 41%;
+background-color: salmon;
+
+}
+
+#t3{
+    position: absolute;
+    left: 88%;
+    top: 50%;
+    background-color: salmon;
+
+}
+
+#t4{
+    position: absolute;
+    left: 88%;
+    top: 59%;
+    background-color: salmon;
+}
+
+summary{
+    position: absolute;
+    left: 84%;
+    top:30%;
+    background-color: salmon;
+    border-radius: 15%;
+    border-color: salmon;
+    opacity: 0.9;
+    font-size: 2rem;
+    font-family:'staykids';
+}
+
+fieldset{
+    position: absolute;
+    left: 24%;
+    border-width: 5px;
+    width: 600px;
+    height: 510px;
+    border-color:salmon;
+    border-radius: 5px;
+}
+
+textarea{
+    position: absolute;
+    border-top: none;
+    top: 7%;
+    opacity: 1.0;
+    font-family: 'staykids';
+    font-size:2rem;
+    width: 450px;
+    height: 450px;
+    left: 80px;
+    opacity: 0.2;
+}
+
+button{
+    position: absolute;
+    top: 90%;
+    width: 60px;
+    height: 40px;
+    left: 335px;
+    box-shadow: 0 0 5px salmon, 
+    0 0 25px salmon,
+    0 0 50px salmon,
+    0 0 100px salmon;
+    background-color: salmon;
+    border-radius: 35%;
+    font-size: 25px;
+    cursor:pointer;
+     
+    ;
+}
+
+#salvar{
+    position: absolute;
+    background-color: salmon;
+    top: 90%;
+    width: 60px;
+    height: 40px;
+    left: 850px;
+    border-radius: 35%;
+    font-size: 25px;
+    font-family:'staykids';
+    box-shadow: 0 0 5px salmon, 
+    0 0 25px salmon,
+    0 0 50px salmon,
+    0 0 100px salmon;
+    background-color: salmon;
+    cursor: pointer;
+}
+
+#foto1{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 74%;
+    opacity: 1.8;
+}
+
+#foto2{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    top: 1%;
+    left: 1px;
+    opacity: 1.8;
+}
+
+#foto3{
+    position: absolute;
+    width: 150px;
+    height: 159px;
+    top: 58%;
+    left: 30%;
+    opacity: 1.8;
+}
+
+#foto4{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    top: 62%;
+    left: 56%;
+    opacity: 1.8;
+}
+
+#foto5{
+    position: absolute;
+    width: 150px;
+    height: 270px;
+    top: 7rem;
+    left: -10%;
+    border-radius: 35%;
+    opacity: 1.8;
+    
+}
+
+#foto6{
+    position: absolute;
+    width: 410px;
+    height: 410px;
+    top: 28%;
+    left: 64%;
+    opacity: 1.8;
+}
+#foto7{
+    position: absolute;
+    width: 250px;
+    height: 270px;
+    top: 3%;
+    left: 1050px;
+    opacity: 1.8;
+}
+
+
+#capa{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    color: rgba(250, 128, 114, 0.555);
+}
+
+

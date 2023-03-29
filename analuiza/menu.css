@@ -1,0 +1,145 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(211, 127, 200, 0.151);
+    position: fixed;
+}
+
+#fundo{
+    position: absolute;
+    padding: 0px 0px;
+    width: 100%;
+    opacity: 1.0;
+    top: 0%;
+    height: 0 36%;
+}
+
+
+fieldset{
+    border-color:  rgba(243, 150, 228, 0.925);
+    background-color:  rgba(243, 150, 215, 0.445);
+    
+}
+
+#botao_d{
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top:170px;
+    left:36px;
+    border-radius:35%;
+    cursor: pointer;
+    border-color:rgba(221, 120, 208, 0.418);
+    border-top: none;
+    
+}
+
+#botao_c{
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top:170px;
+    left:36px;
+    border-radius:35%;
+    cursor: pointer;
+    border-color:rgba(221, 120, 208, 0.418);
+    border-top: none;
+}
+
+#botao_m{
+    width: 150px;
+    height: 50px;
+    position: relative;
+    top:170px;
+    left:36px;
+    border-radius:35%;
+    cursor: pointer;
+    border-color:rgba(221, 120, 208, 0.418);
+    border-top: none;
+}
+
+#diario{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top:25%;
+    border: none;
+    left: 200px;
+    background-color:rgba(221, 120, 208, 0.418);
+    border-radius: 55%;
+}
+
+#diario_d{
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    top: -1rem;
+    left: 1px;
+}
+
+
+#calendario{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: -5px;
+    left: 830px;
+    top:25%;
+    border: none;
+    border-radius: 100%;
+    background-color:rgba(221, 120, 208, 0.418);
+    
+}
+
+#calendario_d{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 10px;
+    border-radius: 30%;
+    top: 5px;
+    
+}
+#test{
+    position: absolute;
+    width: 1099px;
+    height: 500px;
+    top: 5%;
+    left: 60px;
+    border-width: 20px;
+    border-color: rgba(231, 141, 209, 0.89);
+    border-radius: 3%;
+    background-color: rgba(221, 120, 208, 0.418);
+}
+
+#musica{
+    width: 200px;
+    height: 200px;
+    position: absolute; 
+    right: 500px;
+    left: 520px;
+    top:25%;
+    border:none;
+    background-color:rgba(221, 120, 208, 0.418);
+    border-radius: 55%;
+}
+
+#musica_d{
+    position: absolute;
+    width: 250px;
+    height: -258px;
+    top: -1rem;
+    left: -1rem;
+    border-radius: 50%;
+    
+}
+
+.efeito{
+    background:rgba(221, 120, 208, 0.418);
+}
+
+i{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(160, 59, 146);
+}

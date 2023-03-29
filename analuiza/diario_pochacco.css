@@ -1,0 +1,192 @@
+
+html,body{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(180, 106, 202, 0.747);
+}
+
+
+@font-face {
+    font-family:'staykids';
+    src: url(Stay\ Kids.ttf);
+}
+
+i{
+    position: absolute;
+    font-family:'staykids';
+    /* color: rgba(19, 63, 18, 0.856); */
+    left: 3%;
+    top: 3%;
+}
+
+
+
+#t2{
+position: absolute;
+left: 88%;
+top: 41%;
+background-color:rgb(180, 106, 202) ;
+
+}
+
+#t3{
+    position: absolute;
+    left: 88%;
+    top: 50%;
+    background-color: rgb(180, 106, 202);
+
+}
+
+#t4{
+    position: absolute;
+    left: 88%;
+    top: 59%;
+    background-color: rgb(180, 106, 202);
+}
+
+summary{
+    position: absolute;
+    left: 84%;
+    top:30%;
+    background-color: rgb(180, 106, 202);
+    border-radius: 15%;
+    border-color: rgb(180, 106, 202);
+    opacity: 0.9;
+    font-size: 2rem;
+    font-family:'staykids';
+}
+
+fieldset{
+    position: absolute;
+    left: 24%;
+    border-width: 5px;
+    width: 600px;
+    height: 510px;
+    border-color: rgb(180, 106, 202);
+    border-radius: 5px;
+}
+
+textarea{
+    position: absolute;
+    border-top: none;
+    top: 7%;
+    opacity: 1.0;
+    font-family: 'staykids';
+    font-size:2rem;
+    width: 450px;
+    height: 450px;
+    left: 80px;
+    opacity: 0.2;
+}
+
+button{
+    position: absolute;
+    top: 90%;
+    width: 60px;
+    height: 40px;
+    left: 335px;
+    box-shadow: 0 0 5px rgb(180, 106, 202), 
+    0 0 25px rgb(180, 106, 202),
+    0 0 50px rgb(180, 106, 202),
+    0 0 100px rgb(180, 106, 202);
+    background-color: rgb(180, 106, 202);
+    border-radius: 35%;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#salvar{
+    position: absolute;
+    background-color: rgb(180, 106, 202);
+    top: 90%;
+    width: 60px;
+    height: 40px;
+    left: 850px;
+    border-radius: 35%;
+    font-size: 25px;
+    font-family:'staykids';
+    box-shadow: 0 0 5px rgb(180, 106, 202), 
+    0 0 25px rgb(180, 106, 202),
+    0 0 50px rgb(180, 106, 202),
+    0 0 100px rgb(180, 106, 202);
+    background-color: rgb(180, 106, 202);
+    cursor: pointer;
+
+}
+
+#foto1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 1rem;
+    opacity: 1.8;
+    left: 850px;
+}
+
+#foto2{
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    top: 66%;
+    left: 20%;
+    opacity: 1.8;
+}
+
+#foto3{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 45%;
+    left: 72%;
+    opacity: 1.8;
+}
+
+#foto4{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    top: 6%;
+    left: 31%;
+    opacity: 0.2;
+}
+
+#foto5{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 1px;
+    left: 600px;
+    border-radius: 35%;
+    opacity: 1.8;
+    
+}
+
+#foto6{
+    position: absolute;
+    width: 410px;
+    height: 410px;
+    top: 15%;
+    left: 1%;
+    opacity: 1.8;
+    border-radius: 20%;
+}
+#foto7{
+    position: absolute;
+    width: 150px;
+    height: 190px;
+    top: 6%;
+    left: 1100px;
+    opacity: 1.8;
+}
+
+
+#capa{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    color: rgba(180, 106, 202, 0.747);
+}
+
+
