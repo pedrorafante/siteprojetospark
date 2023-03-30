@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Floricultura</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo 3.png" alt="Logo da Floricultura">
+      </div>
+      <nav>
+        <menu id="itens">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+            <li><a href="index.html">Login</a></li>
+            <li><a href="cadastro.html">Cadastrar</a></li>
+          </ul>
+        </menu>
+      </nav>
+    </header>
+    <div class="formulario">
+      <form onsubmit="login(event)">
+        <label for="usuario">Usuário:</label>
+        <input type="email" id="usuario" />
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" />
+        <button type="home.html">Entrar</button>
+         <!-- button - representa visualmente por botão clicável-->
+      </form>
+    </div>
+    <!-- Criamos um form para o login utilizando um tipo de 
+        interação (submit) para o bortão. Esse tipo envia o
+         formulário e o formulário chama a função passada no 
+         atributo onsubmit -->
+
+    <script src="./script.js"></script>
+    <!-- ./ indica que o arquivo está na mesma pasta, caminho da pasta -->
+    <footer>
+      <p>&copy; 2023 Dani Floricultura - Todos os direitos reservados</p>
+    </footer>
+  </body>
+</html>

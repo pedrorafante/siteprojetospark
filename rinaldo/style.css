@@ -1,0 +1,255 @@
+/*logo*/
+/*margin- é o espaçamento fora do elemento*/
+.logo {
+    margin: 10px 0 0 20px;	
+}
+
+.logo img{
+    width: 182px;
+    height: 121px;
+}
+
+
+/*login*/
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, .formulario {
+   height: 100%;
+}
+body{
+    background-color: rgb(137, 139, 137);
+}
+
+body header{
+    margin-bottom: 60px;
+}
+ /* display flex - com o uso dele podemo manipular todos os elementos filho com propriedades novas*/
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items:center;
+    justify-content: center;
+}
+
+button {
+    margin-top: 8px;
+}
+
+
+
+/*home*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*tex-align - define o alinhamento horizontal do texto*/
+header {
+    background-color: rgb(228, 176, 185);
+    color: rgb(17, 17, 17);
+    text-align:left;
+    padding: 10px;
+}
+
+header h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align:center;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 60px;
+    text-align:center;
+}
+
+.texto {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.home{
+    background-color: rgb(137, 139, 137);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom:auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav li a {
+    color: #141414 ;
+    text-decoration: none;
+    font-size: 18px ;
+}
+
+img{
+    margin: 5px;
+    width: 182px;
+    height: 121px;
+}
+
+footer{
+    background-color: rgb(228, 176, 185);
+    color: #0e0d0d;
+    padding: 5px;
+    margin-top: 200px;
+    position: relative;
+    min-height: 5vh; 
+}
+
+footer p{
+    text-align: center;
+}
+
+h1 h2 h3 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}    
+
+p{
+    text-align: justify;
+}
+
+textarea{
+    padding: 20px;
+}
+
+banner{
+    max-width: 800px;
+}
+
+.fotos{
+    text-align: center;
+    
+}
+/*tooltip - é aquela moldura flutuante que abre quando passa-se o mouse sobre um elemento 
+e tem uma explicação adicional sobre o elemento*/
+[data-tooltip] {
+    position: relative;
+    font-weight: bold;
+  }
+  
+  [data-tooltip]:after {
+    display: none;
+    position: absolute;
+    top: -5px;
+    padding: 5px;
+    border-radius: 3px;
+    left: calc(100% + 2px);
+    content: attr(data-tooltip);
+    white-space: nowrap;
+    background-color: rgb(137, 139, 137)f;
+    color: White;
+  }
+  
+  [data-tooltip]:hover:after {
+    display: block;
+  }
+
+
+/*produtos*/
+
+menu{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.produtos{
+    background-color:  rgb(137, 139, 137);
+}
+
+.item {
+    display: inline-block;
+	background-color: #646363;
+	padding: 30px;
+	margin: 30px;
+	border-radius: 5px
+}/* border-radius - para arredondamento dos cantos de um elemento*/
+span{
+    font-weight: bold;
+}
+/*visibility - ele pode mostrar ou ocultar um elemento sem afetar o layout de um documento*/
+.um{
+    visibility: hidden;
+}
+
+  .nome{
+    font-size: 18px;
+  }
+
+/*contatos*/
+
+.formulario{
+    color: rgb(29, 26, 26);
+}
+
+.cont{
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 2px 2px 2px;
+    border-radius: 10px solid blackss;
+    text-align: justify;
+}
+
+.contato{
+    background-color: rgb(137, 139, 137);
+}
+
+.titulo{
+    text-align: justify;
+}
+
+.label{
+    grid-column: auto;
+}
+
+.botao{
+    width: 100px;
+    margin: 0 auto;
+    display: grid;
+    width: 50px;
+    color: rgb(12, 12, 14);
+}
+
+.input{
+    width: 790px;
+    margin: 5px 5px 5px 5px;
+ }
+
+fieldset{
+    background-color: #646363;
+}
+
+legend{
+    font-family: arial black;
+    font-size: 30px;
+    color: rgb(8, 8, 8);
+}
+
+/*cadastro*/
+
+.linha{
+    background-color: #646363;
+}
+
