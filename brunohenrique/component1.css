@@ -1,0 +1,320 @@
+.component1-container {
+  min-height: 100vh;
+}
+
+.component1-container01 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.component1-image {
+  width: 150px;
+  object-fit: cover;
+}
+
+.component1-container02 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 100px;
+  display: flex;
+  position: relative;
+  align-self: center;
+  align-items: right;
+  justify-content: right;
+  background-color: #004c4c;
+}
+
+.component1-container021 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 100px;
+  display: flex;
+  position: relative;
+  align-self: center;
+  align-items: right;
+  justify-content: right;
+  background-color: #004c4c;
+}
+
+.component1-ul {
+  top: 22px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  position: absolute;
+  align-self: center;
+  list-style-position: outside;
+}
+
+.component1-li {
+  display: inline-block;
+}
+
+.component1-text {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 25px;
+  align-self: center;
+  font-family: Roboto;
+  margin-right: 50px;
+  margin-top: 25px;
+}
+
+.component1-text01 {
+  color: #ffffff;
+  font-size: 25px;
+  align-self: center;
+  font-family: Roboto;
+  margin-right: var(--dl-space-space-unit);
+
+}
+
+.component1-container03 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 361px;
+  display: block;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
+  background-color: #004c4c;
+}
+
+.component1-text04 {
+  color: #ffffff;
+  font-size: 15px;
+  font-style: italic;
+  margin-top: var(--dl-space-space-unit);
+  font-family: Roboto;
+  font-weight: 700;
+  margin-left: var(--dl-space-space-unit);
+  margin-right: auto;
+  font-style: italic;
+}
+
+.component1-container04 {
+  flex: 0 0 auto;
+  width: 95%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.component1-container05 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.component1-container06 {
+  width: 698px;
+  /* border: 2px dashed rgba(120, 120, 120, 0.4); */
+  height: var(--dl-size-size-xxlarge);
+  display: flex;
+  flex-flow: wrap;
+  margin-top: var(--dl-space-space-halfunit);
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius8);
+  justify-content: flex-start;
+  background-color: transparent;
+  margin-left: auto;
+  font-size: medium;
+  font-style: italic;
+  color: #ffffff;
+  margin-right: auto;
+}
+
+.image {
+  height: 296px;
+  border-radius: var(--dl-radius-radius-round);
+  display: flex;
+}
+
+.component1-container07 {
+  width: 296px;
+  height: var(--dl-size-size-xxlarge);
+  display: flex;
+  flex-flow: wrap;
+  align-self: flex-end;
+  margin-top: var(--dl-space-space-halfunit);
+  align-items: flex-start;
+  flex-shrink: inherit;
+  margin-left: 35%;
+  border-radius: var(--dl-radius-radius-round);
+  flex-direction: row;
+  /* background-color: #ffffff; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.component1-text05 {
+  color: #ffffff;
+  font-size: 25px;
+  align-self: center;
+  text-align: center;
+  padding-top: var(--dl-space-space-unit);
+}
+
+.component1-container09 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.component1-container10 {
+  order: 3;
+  width: 512px;
+  height: 396px;
+  display: flex;
+  align-items: flex-start;
+  margin-left: var(--dl-space-space-sixunits);
+  border-radius: var(--dl-radius-radius-radius8);
+  font-style: italic;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.component1-text08 {
+  padding: var(--dl-space-space-halfunit);
+  align-self: center;
+  color: #ffffff;
+  text-align: left;
+  font-family: Roboto;
+}
+
+.component1-container11 {
+  order: 2;
+  width: 226px;
+  display: flex;
+  align-self: flex-end;
+  align-items: flex-end;
+  margin-left: var(--dl-space-space-sixunits);
+  border-radius: var(--dl-radius-radius-radius4);
+  margin-bottom: var(--dl-space-space-unit);
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.component1-image1 {
+  width: var(--dl-size-size-xlarge);
+  margin-top: var(--dl-space-space-oneandhalfunits);
+  object-fit: cover;
+  margin-right: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-radius8);
+}
+
+.component1-image2 {
+  width: 195px;
+  height: 132px;
+  margin-top: var(--dl-space-space-fourunits);
+  object-fit: cover;
+  margin-right: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-radius8);
+}
+
+.component1-container12 {
+  flex: 0 0 auto;
+  order: 1;
+  width: 558px;
+  height: 396px;
+  display: flex;
+  align-items: flex-start;
+  margin-left: var(--dl-space-space-sixunits);
+  border-radius: var(--dl-radius-radius-radius8);
+  font-style: italic;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.component1-text17 {
+  padding: var(--dl-space-space-halfunit);
+  align-self: center;
+  text-align: left;
+  color: #ffffff;
+  font-family: Roboto;
+}
+
+.agendamento {
+  margin-left: 42%;
+
+
+}
+
+input {
+  width: 35%;
+  height: 25px;
+  border-radius: 15px;
+
+
+}
+
+.component1-container08 {
+  flex: 0 0 auto;
+  width: auto;
+  height: 564px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #008080;
+}
+
+.component1-container13 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-self: center;
+  margin-top: 10%;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  background-color: #004C4C;
+
+}
+
+.component1-container14 {
+  flex: 0 0 auto;
+  width: 322px;
+  height: 100px;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.component1-text27 {
+  color: #ffffff;
+  align-self: center;
+  text-align: center;
+  font-family: Roboto;
+  opacity: 30%;
+}
+
+.component1-image3 {
+  top: 26px;
+  right: 0px;
+  width: var(--dl-size-size-small);
+  position: absolute;
+  object-fit: cover;
+  margin-right: var(--dl-space-space-sixunits);
+}
+
+.component1-image4 {
+  top: 26px;
+  right: var(--dl-space-space-oneandhalfunits);
+  width: var(--dl-size-size-small);
+  position: absolute;
+  object-fit: cover;
+}
