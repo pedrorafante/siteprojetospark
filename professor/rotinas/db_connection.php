@@ -1,6 +1,6 @@
 <?php
 // database Connection
-$hostname = "projetospark.com.br";
+$hostname = "projetospark.com.br:3306";
 $username = "u751391022_todophp";
 $password = "Admin123456";
 $db =  "u751391022_todophp";
