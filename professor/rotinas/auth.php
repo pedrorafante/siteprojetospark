@@ -18,7 +18,7 @@ if (isset($_POST['login-btn'])) {
                 $_SESSION['status'] = $row['status'];
                 $_SESSION['logged_in'] = true;
 
-                header("location:http://localhost/todo/home.php?username=$row[username]");
+                header("location:http://projetosparke/professor/home.php?username=$row[username]");
             } else {
                 echo "<script>alert('Senha incorreta!!'); window.location='../index.php';</script>";
             }
