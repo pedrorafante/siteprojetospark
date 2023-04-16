@@ -1,4 +1,4 @@
 <?php
 session_start();
 session_destroy();
-header("location:http://localhost/todo/index.php?msg=logout");
+header("location:http://projetospark.com.br/professor/index.php?msg=logout");

@@ -96,6 +96,6 @@ if ($_SESSION['logged_in'] == true) {
 
 <?php
 } else {
-    header("location:http://localhost/todo/index.php?msg=login_first");
+    header("location:http://projetospark.com.br/professor/index.php?msg=login_first");
 }
 ?>
