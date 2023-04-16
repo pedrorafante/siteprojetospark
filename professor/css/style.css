@@ -1,0 +1,21 @@
+.login-form{
+    margin : auto;
+}
+
+.formcontainer{
+    height: 100%;
+    margin-top: 10%;
+}
+.logout-btn a{
+    text-decoration : none;
+    color : #000000;
+}
+
+#add-todo-form{
+    display : none;
+
+}
+
+.hidden{
+    display : none;
+}
