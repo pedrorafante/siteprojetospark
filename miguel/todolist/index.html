@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <section>
+        <h1>Lista de Tarefas</h1>
+        <div class="blocoAdicionar">
+            <div class="adicionarTarefa">
+                <input type="text" placeholder="Adicionar nova tarefa." class="inputTarefas">
 
+                <input type="button" value="+" class="botaoAdicionar">
+                <p id="filtrar">Filtrar</p>
+            </div>
+        </div>
+
+        <div class="blocoTarefasAdicionadas">
+            <i class="fa-solid fa-clock-rotate-left" onclick="mostrarHistorico()" id="icon"></i>
+            <p id="tarefasAdicionadas">Suas Tarefas</p>
+        </div>
+        
+        <div id="blocoFiltrar">
+            <p id="tarefasAdicionadas">Filtrar</p>
+            <div id="selecionar">
+                <p id="tituloSecaoFiltrar">Selecionar <br> por 
+                    <select name="" id="estadoTarefa"> 
+                        <option value="Concluídas" id="option">Concluídas</option>
+                        <option value="Pendentes" id="option">Pendentes</option>
+                        <option value="Todas" id="option" selected>Todas</option>
+                    </select>
+                </p>
+            </div>
+
+            <div id="selecionar">
+                <p id="tituloSecaoFiltrar">Selecionar<br> a partir 
+                    <select name="" id=""> 
+                        <option value="" id="option">Concluídas</option>
+                        <option value="" id="option"> Pendentes</option>
+                        <option value="" id="option"selected>Selecione</option>
+                    </select>
+                </p>
+            </div>
+            <input type="button" value="Aplicar" id="botaoAplicar">
+        </div>
+
+        <div id="blocoHistorico">
+            <i class="fa-sharp fa-solid fa-xmark" id="iconFechar" onclick="esconderHistorico()"></i>
+            <p id="historico">Histórico de Tarefas</p>
+        </div>
+
+
+    </section>
+    <script src="https://kit.fontawesome.com/8f682f19ac.js" crossorigin="anonymous"></script>
+    <script src="js/script.js" defer ></script>
+</body>
+</html>
