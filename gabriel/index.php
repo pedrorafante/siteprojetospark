@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,12 @@
     <title>Login</title>
 
 </head>
+
 <body>
     <div class="container">
         <div class="img">
             <img src="assets/img/imglogin.svg" alt="imagem" class="imagem" />
-          </div> 
+        </div>
         <div class="formulario">
             <div class="form header">
                 <div class="titulo">
@@ -21,15 +23,15 @@
                 </div>
                 <nav>
                     <div class="button cadastro">
-                        <button><a href="http://127.0.0.1:5500/Cadastro.html">Cadastro</a></button>
+                        <button><a href="Cadastro.php">Cadastro</a></button>
                     </div>
                 </nav>
             </div>
-                <form method="post" action="rotinas/auth.php" target="_blank">
+            <form method="post" action="rotinas/auth.php" target="_blank">
                 <div class="input-group">
                     <div class="input-box">
                         <label for="email">Email:</label>
-                        <input type="email" id="login_email" name="login_email" placeholder="Digite seu email" required >
+                        <input type="email" id="login_email" name="login_email" placeholder="Digite seu email" required>
                     </div>
                     <div class="input-box">
                         <label for="senha">Senha:</label>
@@ -37,15 +39,16 @@
                     </div>
                 </div>
                 <div class="button-group">
-                        <button type="submit" name="login-btn" id="login-btn"><span>Confirmar</span></button>
-                        <button type="reset"><span>Resetar</span></button>
+                    <button type="submit" name="login-btn" id="login-btn"><span>Confirmar</span></button>
+                    <button type="reset"><span>Resetar</span></button>
                 </div>
                 <div class="esqueceu">
-                    <a href="http://127.0.0.1:5500/mudarsenha.html">Esqueceu a senha?</a>
+                    <a href="mudarsenha.php">Esqueceu a senha?</a>
                 </div>
-                </form>
+            </form>
         </div>
     </div>
     <script src="assets/Js/signup.js"></script>
 </body>
+
 </html>
