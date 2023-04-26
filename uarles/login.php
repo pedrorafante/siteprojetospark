@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="./src/css/styli.css">
 
-    <title>Cadastrar</title>
+    <title>Login</title>
 </head>
 
 <body>
@@ -18,19 +18,17 @@
         </video>
     </div>
 
-    <div id="corpo-form-cad">
-        <h1>Cadastrar Senha</h1>
+    <div id="corpo-form">
+        <h1>Entrar</h1>
         <form method="POST">
-            <input type="text" placeholder="Nome Completo">
-            <input type="text" placeholder="Telefone">
             <input type="email" placeholder="Usuário">
             <input type="password" placeholder="Senha">
-            <input type="password" placeholder="Confirmar Senha">
-            <input type="submit" value="Cadastrar">
-            <a href="login.php"><strong>Fazer Login!</strong></a>
+            <input type="submit" value="ACESSAR">
+            <a href="./cadastrar.php">Ainda não é inscrito? <strong>Cadastre-se!</strong></a>
 
         </form>
     </div>
+
 
 </body>
 

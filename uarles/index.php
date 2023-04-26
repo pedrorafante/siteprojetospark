@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html lang="Pt-BR">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=L, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./src/css/styli.css">
+    <link rel="shortcut icon" href="./src/imagens/871392.png" type="image/x-icon">
 
-    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+
+    <link rel="stylesheet" href="./src/css/estilos.css">
+
+
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+    <title>Super Mario Bros - o Filme</title>
+
 </head>
 
 <body>
@@ -18,18 +33,43 @@
         </video>
     </div>
 
-    <div id="corpo-form">
-        <h1>Entrar</h1>
-        <form method="POST">
-            <input type="email" placeholder="Usuário">
-            <input type="password" placeholder="Senha">
-            <input type="submit" value="ACESSAR">
-            <a href="./cadastrar.php">Ainda não é inscrito? <strong>Cadastre-se!</strong></a>
+    <header class="cabecalho">
+        <a>
+            <img class="logo" src="./src/imagens/logo-chapeu-mario.png" alt="logo chapeu mario">
+        </a>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">home</a></li>
+                <li><a href="#">detalhes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="informacoes">
+            <img class="imagem-titulo" src="./src/imagens/titulo.png" alt="imagem do titulo do filme">
+            <p class="descricao">Mario é um encanador junto com seu irmão Luigi. Um dia,
+                eles vão parar no reino dos cogumelos, gorvernado pela princesa Peach,
+                mas ameaçado pelo o rei dos koopas, que faz de tudo para conseguir reinar em todos os lugares. </p>
+            <button class="botao-trailer">veja o trailer</button>
 
-        </form>
-    </div>
+            <p class="artigo">Faça seu login para saber mais, ver traileS, filmes relacionados, série e muito mais.</p>
+            <nav class="botao">
+                <ul class="btn">
+                    <li><a href="./login.php">Fazer Login</a></li>
+                </ul>
+            </nav>
 
+        </div>
+        <img class="mario" src="./src/imagens/super-mario-chars.png" />
 
+        <div class="modal">
+            <div class="conteudo-modal">
+                <span class="fechar-modal">x</span>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Cb4WV4aXBpk" title="trailer oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+    <script src="./src/js/index.js"></script>
 </body>
 
 </html>
