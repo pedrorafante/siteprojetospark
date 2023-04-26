@@ -127,9 +127,9 @@ const adicionarTarefa = () =>{
         const recoverIcon = document.createElement('i')
         recoverIcon.classList.add('fa-solid')
         recoverIcon.classList.add('fa-upload')
-
-        tarefaHistorico.appendChild(tarefasDeletadas);
+    
         tarefaHistorico.appendChild(recoverIcon)
+        tarefaHistorico.appendChild(tarefasDeletadas);
 
         blocoHistorico.appendChild(tarefaHistorico)
 
