@@ -1,4 +1,3 @@
-
 <?php
 include("config.php");
 ?>
@@ -25,13 +24,13 @@ include("config.php");
     </nav>
   </header>
   <form action="salvar.php" method="POST">
-  <div id="formulário">
-    <h4><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-       Receber notícias também por email: 
-    <input type="email" required multiple> <input id="button" type="submit" value="Confirmar Email" onclick="ConfirmarEmail()" </h4>
-</form>
-    <br><br>
-    </div>
+    <div id="formulário">
+      <h4><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Receber notícias também por email:
+        <input type="email" required multiple> <input id="button" type="submit" value="Confirmar Email" onclick="ConfirmarEmail()" </h4>
+  </form>
+  <br><br>
+  </div>
   <main>
     <article>
       <h1>Iphone 13 com R$:2000 de desconto</h1>
@@ -52,7 +51,7 @@ include("config.php");
         e autonomia de bateria de até 19h de reprodução de vídeo.utro parágrafo da notícia</p>
       <figure class="figure-centro">
         <img src="imagem.jpeg" alt="Descrição da imagem">
-        <figcaption>Rafante seu lindo, eu quero o mousepad <3</figcaption>
+        <figcaption>Rafante seu lindo, eu quero o mousepad <3< /figcaption>
       </figure>
     </article>
     <br> <br> <br> <br>
@@ -135,8 +134,8 @@ include("config.php");
         para seus clientes. E em abril não poderia ser diferente. É mais uma
         novidade, desta vez, focada em um público específico através do
         lançamento de um novo produto. Conheça-o a seguir. </p>
-        <figure class="figure-centro">
-      <img src="bancointer.jpg" width="440" height="240">
+      <figure class="figure-centro">
+        <img src="bancointer.jpg" width="440" height="240">
 
         <figcaption>Banco Inter valoriza o relacionamento com novos clientes;
           confira.</figcaption>
@@ -157,10 +156,10 @@ include("config.php");
           poderão contar com facilidades como:</p>
 
         <p>Cartão de débito;<br>
-        PIX;<br>
-        Recarga de celular;<br>
-        Aplicação na poupança;<br>
-        Compra de Gift Cards</p>
+          PIX;<br>
+          Recarga de celular;<br>
+          Aplicação na poupança;<br>
+          Compra de Gift Cards</p>
 
         <p>Como vimos nas linhas anteriores, o jovem que tiver interesse
           em obter um cartão de crédito com seu nome terá acesso a diversos
@@ -186,4 +185,5 @@ include("config.php");
   </footer>
 </body>
 </main>
+
 </html>
