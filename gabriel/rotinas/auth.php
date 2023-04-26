@@ -12,13 +12,14 @@ if (isset($_POST['login-btn'])) {
         $row = mysqli_fetch_assoc($query);
         if ($row) {
             if ($row['password'] == $login_password) {
-                $_SESSION['username'] = $row['username'];
-                $_SESSION['user_id'] = $row['id'];
-                $_SESSION['email'] = $row['email'];
-                $_SESSION['status'] = $row['status'];
-                $_SESSION['logged_in'] = true;
+                // $_SESSION['username'] = $row['username'];
+                // $_SESSION['user_id'] = $row['id'];
+                // $_SESSION['email'] = $row['email'];
+                // $_SESSION['status'] = $row['status'];
+                // $_SESSION['logged_in'] = true;
 
-                header("location:http://projetospark.com.br/professor/home.php?username=$row[username]");
+                echo "<script>alert('Login efetuado com sucesso!!');</script>";
+                // header("location:http://projetospark.com.br/professor/home.php?username=$row[username]");
             } else {
                 echo "<script>alert('Senha incorreta!!'); window.location='../index.php';</script>";
             }
