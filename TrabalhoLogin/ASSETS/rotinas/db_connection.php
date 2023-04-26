@@ -2,7 +2,7 @@
 // database Connection
 $hostname = "localhost";
 $username = "u751391022_trabalhologin";
-$password = "Abcd123!";
+$password = "K6GVfDm&i";
 $db =  "u751391022_trabalhologin";
 
 try {

@@ -39,30 +39,30 @@ $password = $_POST['password'];
 $confirme = $_POST['confirme'];
 
 if (isset($_POST['enviar_button'])) {
-    echo $name . " - " . $email . " - " . $password . " - " . $confirme;
-    // if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    //     $select = "SELECT * FROM usuarios WHERE email = '$email'";
-    //     $query = mysqli_query($conn, $select);
-    //     $row = mysqli_fetch_assoc($query);
+    // echo $name . " - " . $email . " - " . $password . " - " . $confirme;
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $select = "SELECT * FROM usuarios WHERE email = '$email'";
+        $query = mysqli_query($conn, $select);
+        $row = mysqli_fetch_assoc($query);
 
-    // if ($password == $confirme) {
-    //     if (!$row) {
-    //         $insert = "INSERT INTO usuarios(nome, email, senha) VALUES ('$name','$email',md5($password))";
-    //         $query = mysqli_query($conn, $insert);
-    //         if ($query) {
-    //             echo "<script>alert('Conta criada com Sucesso!!'); window.location='../../index.php';</script>";
-    //         } else {
-    //             echo "<script>alert('Algo deu errado! Tende novamente!'); window.location='../../cadastro.php';</script>";
-    //         }
-    //     } else {
-    //         echo "<script>alert('Usuário já existe! Tente novamente'); window.location='../../cadastro.php';</script>";
-    //     }
-    // } else {
-    //     echo "<script>alert('As Senhas precisam ser iguais!!'); window.location='../../cadastro.php';</script>";
-    // }
-    // } else {
-    //     echo "<script>alert('E-mail inválido!!'); window.location='../../cadastro.php';</script>";
-    // }
+        if ($password == $confirme) {
+            if (!$row) {
+                $insert = "INSERT INTO usuarios(nome, email, senha) VALUES ('$name','$email',md5($password))";
+                $query = mysqli_query($conn, $insert);
+                if ($query) {
+                    echo "<script>alert('Conta criada com Sucesso!!'); window.location='../../index.php';</script>";
+                } else {
+                    echo "<script>alert('Algo deu errado! Tende novamente!'); window.location='../../cadastro.php';</script>";
+                }
+            } else {
+                echo "<script>alert('Usuário já existe! Tente novamente'); window.location='../../cadastro.php';</script>";
+            }
+        } else {
+            echo "<script>alert('As Senhas precisam ser iguais!!'); window.location='../../cadastro.php';</script>";
+        }
+    } else {
+        echo "<script>alert('E-mail inválido!!'); window.location='../../cadastro.php';</script>";
+    }
 }
 
 
