@@ -66,7 +66,9 @@ if (isset($_POST['enviar_button'])) {
 }
 
 
-
+if (isset($_POST['recuperacao_button'])) {
+    echo "Entrou aki";
+}
 
 /*
 if (isset($_POST['enviar_button'])) {

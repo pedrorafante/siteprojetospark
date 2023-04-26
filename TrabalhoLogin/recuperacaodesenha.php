@@ -12,7 +12,7 @@
 
 <body>
   <main id="container_rec">
-    <form id="recuperacao_form">
+    <form id="recuperacao_form" method="post" action="ASSETS/rotinas/auth.php">
       <div id="form_header">
         <h1>Recuperação <br> de senha</h1>
         <i id="mode_icon" class="fa-regular fa-moon"></i>
@@ -27,7 +27,7 @@
             </div>
           </label>
         </div>
-        <button type="submit" id="recuperacao_button">
+        <button type="submit" id="recuperacao_button" name="recuperacao_button">
           Recuperar senha
         </button>
     </form>
