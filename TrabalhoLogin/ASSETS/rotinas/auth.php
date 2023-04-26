@@ -11,7 +11,7 @@ if (isset($_POST['login_button'])) {
     //echo "ENTROU LOGIN " . $email. " - ".$password;
     if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $select = "SELECT * FROM usuarios WHERE email = '{$email}'";
-        
+
         $query = mysqli_query($conn, $select);
         $row = mysqli_fetch_assoc($query);
         //echo "Senha digitada " .$password;
@@ -20,19 +20,15 @@ if (isset($_POST['login_button'])) {
         if (!$row) {
             echo "<script>alert('E-mail não cadastrado!!'); window.location='../../index.php';</script>";
         } else {
-        if ($password == $row["senha"]) {
-            echo "<script> window.location='../../sucesso.php';</script>";;
-         } else {
+            if ($password == $row["senha"]) {
+                echo "<script> window.location='../../sucesso.php';</script>";;
+            } else {
                 echo "<script>alert('Senha incorreta, tente novamente!!'); window.location='../../index.php';</script>";
-         }
+            }
         }
-    
-    }else {
-         echo "<script>alert('E-mail incorreto!!'); window.location='../../cadastro.php';</script>";
+    } else {
+        echo "<script>alert('E-mail incorreto!!'); window.location='../../cadastro.php';</script>";
     }
-
-    
- 
 }
 
 
@@ -47,37 +43,26 @@ if (isset($_POST['enviar_button'])) {
         $select = "SELECT * FROM usuarios WHERE email = '$email'";
         $query = mysqli_query($conn, $select);
         $row = mysqli_fetch_assoc($query);
-        echo "EMAIL VALIDO";
-    }else {
-         echo "<script>alert('E-mail inválido!!'); window.location='../../cadastro.php';</script>";
-    }
 
-    if ($password == $confirme) {
-        echo "senha correta";
-     } else {
+        if ($password == $confirme) {
+            if (!$row) {
+                $insert = "INSERT INTO usuarios(nome, email, senha) VALUES ('$name','$email',md5($password))";
+                $query = mysqli_query($conn, $insert);
+                if ($query) {
+                    echo "<script>alert('Conta criada com Sucesso!!'); window.location='../../index.php';</script>";
+                } else {
+                    echo "<script>alert('Algo deu errado! Tende novamente!'); window.location='../../cadastro.php';</script>";
+                }
+            } else {
+                echo "<script>alert('Usuário já existe! Tente novamente'); window.location='../../cadastro.php';</script>";
+            }
+        } else {
             echo "<script>alert('As Senhas precisam ser iguais!!'); window.location='../../cadastro.php';</script>";
-     }
-    
-     if (!$row) {
-        $insert = "INSERT INTO usuarios(nome, email, senha) VALUES ('$name','$email',md5($password))";
-        $query = mysqli_query($conn, $insert);
-        echo "usuario criado";
+        }
     } else {
-        echo "<script>alert('Usuário já existe! Tente novamente'); window.location='../../cadastro.php';</script>";
-    }
-    
-    if ($query) {
-        echo "<script>alert('Conta criada com Sucesso!!'); window.location='../../index.php';</script>";
-        print("NOME ". $name . "EMAIL ".$email. "password ".$password. "confirme ".$confirme );
-    } else {
-        echo "<script>alert('Algo deu errado! Tende novamente!'); window.location='../../cadastro.php';</script>";
-        
+        echo "<script>alert('E-mail inválido!!'); window.location='../../cadastro.php';</script>";
     }
 }
-
-
-
-
 
 
 
