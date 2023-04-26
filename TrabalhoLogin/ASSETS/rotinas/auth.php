@@ -65,7 +65,7 @@ if (isset($_POST['enviar_button'])) {
     }
 }
 
-$email = $_POST['e-mail'];
+$email = $_POST['recuperacao'];
 if (isset($_POST['recuperacao_button'])) {
     $select = "SELECT * FROM usuarios WHERE email = '$email'";
     $query = mysqli_query($conn, $select);
