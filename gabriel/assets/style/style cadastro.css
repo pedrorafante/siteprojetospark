@@ -1,0 +1,267 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.7s ease-in-out;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    background-color: rgb(208, 232, 254);
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.container:hover {
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.cont{
+    float: left;
+}
+
+.img {
+    justify-content: center;
+    display: flex;
+    width: 50%;
+    background-color: #63bbff;
+}
+.img img {
+    width: 90%;
+}
+
+.img img:hover {
+    width: 85%;
+    
+}
+
+.formulario {
+    display: flex;
+    width: 50%;
+    background-color: rgba(255, 255, 255 );
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    flex-direction: column;
+
+}
+
+.header {
+    display: flex;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-right: 50px;
+}
+
+.button {
+    margin-left: 90px;
+    display: flex;
+}
+
+.button button {
+    width: 130px;
+    height: 40px;
+    border: none;
+    background-color: #34a7ff;
+    border-radius: 6px;
+    justify-content: center;
+}
+
+.button button a {
+    text-decoration: none;
+    font-weight: 450;
+    color: white;
+    padding: 0.8rem 3rem ;
+}
+
+.button button:hover {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    border: 2px solid  rgba(0, 0, 0, 0.6);
+}
+
+.button button a:hover,span:hover {
+    color: black;
+}
+
+.button button span {
+    padding: 0.8rem 2rem;
+}
+
+.button-group button span {
+    padding: 0.8rem 2rem;
+}
+
+label {
+    cursor: pointer;
+}
+
+.input-box label,
+h6 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+.input-group {
+    margin: 2rem 0;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+    width: 450px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    margin-left: 0px;
+}
+
+
+.header h1::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.4rem;
+    background-color: #6c63ff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.input-box input {
+    transition: all 0.2s ease-in-out;
+    border: none;
+    box-shadow: 1px 1px 4px black;
+    border-radius: 10px;
+    padding: 10px 6px;
+    margin-top: 8px;
+}
+
+.input-box input:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box input:focus-visible {
+    outline: 2px solid #0000007c;
+}
+
+.gender-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.gender-input {
+    display: flex;
+    align-items: center;
+}
+.gender-input input {
+    margin-right: 4px;
+}
+.gender-input label {
+    font-size: 15px;
+    font-weight: 450;
+    color: #000000fe;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-group button {
+    width: 200px;
+    height: 40px;
+    margin-inline: 30px;
+    margin-top: 50px;
+    border:none;
+    background-color: #5675ff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 450;
+    color: white;
+    padding: 0.8rem 2.4rem ;
+}
+
+.button-group button:hover {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    border: 2px solid  rgba(0, 0, 0, 0.6);
+}
+
+.button-group button a:hover {
+    color: black;
+}
+
+@media screen and (max-width:1220px){
+    .img {
+        display: none;
+    }
+    .container{
+        width: 50%;
+    }
+    .formulario {
+        width: 100%;
+    }
+ }
+ 
+ @media screen and (max-width:961px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .formulario {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header {
+        margin: 20px;
+    }
+
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding: 10px 3rem 0 0.5rem;
+        max-height: 15rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+    .gender-input {
+        margin-top: 2rem;
+    }
+    .gender-group {
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    h6 {
+        margin-top: 20px;
+    }
+    .gender-input {
+        margin-top: 0.5rem;
+    }
+    .button-group {
+        margin-bottom: 15px;
+    }
+ }

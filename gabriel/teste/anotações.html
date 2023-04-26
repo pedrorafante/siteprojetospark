@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'inter',sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(208, 232, 254);
+}
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+    </style>
+    <title>Página de Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cont img">
+            <img src="" alt="">
+        </div>
+        <div class="cont formulario">
+            <h1>Cadastre-se</h1>
+            <button>Entrar</button>
+            <form action="#" method="get" target="_blank">
+                <div class="form nome">
+                    <label for="nome">Primeiro nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu primeiro nome" >
+                </div>
+                <div class="form sobrenome">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" name="sobremome" placeholder="Digite seu sobrenome">
+                </div>
+                <div class="form email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu Email" >
+                </div>
+                <div  class="form celular">
+                    <label for="celular">Número de Celular</label>
+                    <input type="tel" id="celular" name="celular" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="(xx) xxxxx-xxxx">
+                </div>
+                <div class="form senha">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite a sua Senha">
+                </div>
+                <div class="form confirme">
+                    <label for="confirme">Confirme a sua senha</label>
+                    <input type="password" id="confirme" name="confirme" placeholder="Confirme a sua Senha">
+                </div>               
+                <div class="cont genero">
+                    <div>
+                        <h6>Gênero</h6>
+                    </div>
+
+                    <div class="form gereno">
+                        <div class="form genero">
+                            <input id="femnino" type="radio" name="genero">
+                            <label for="femnino">Feminino</label>
+                        </div>
+
+                        <div class="form gereno">
+                            <input id="masculino" type="radio" name="genero">
+                            <label for="masculino">Masculino</label>
+                        </div>
+
+                        <div class="form gereno">
+                            <input id="outros" type="radio" name="genero">
+                            <label for="outros">Outros</label>
+                        </div>
+
+                        <div class="form gereno">
+                            <input id="nenhum" type="radio" name="genero">
+                            <label for="nenhum">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit"><a href="#">Confirmar</a></button>
+                </div>
+                <div>
+                    <button type="reset"><a href="#">Resetar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>
