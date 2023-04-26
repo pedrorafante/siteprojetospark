@@ -119,15 +119,19 @@ const adicionarTarefa = () =>{
         });
     
         const tarefaHistorico = document.createElement('div');
-        tarefaHistorico.classList.add('tarefasHistorico');
+        tarefaHistorico.setAttribute('id', 'tarefaHistorico');
 
         const tarefasDeletadas = document.createElement('p');
         tarefasDeletadas.innerHTML = novaTarefa.value;
 
+        const recoverIcon = document.createElement('i')
+        recoverIcon.classList.add('fa-solid')
+        recoverIcon.classList.add('fa-upload')
+
         tarefaHistorico.appendChild(tarefasDeletadas);
+        tarefaHistorico.appendChild(recoverIcon)
 
         blocoHistorico.appendChild(tarefaHistorico)
-        blocoHistorico.appendChild(tarefasDeletadas)
 
 };
 
