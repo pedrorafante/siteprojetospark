@@ -27,7 +27,7 @@
             <input type="password" placeholder="Senha">
             <input type="password" placeholder="Confirmar Senha">
             <input type="submit" value="Cadastrar">
-            <a href="">Ainda não é inscrito? <strong>Cadastre-se!</strong></a>
+            <a href="index.php"><strong>Fazer Login!</strong></a>
 
         </form>
     </div>

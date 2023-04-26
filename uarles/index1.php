@@ -55,7 +55,7 @@
             <p class="artigo">Faça seu login para saber mais, ver traileS, filmes relacionados, série e muito mais.</p>
             <nav class="botao">
                 <ul class="btn">
-                    <li><a href="./index.html">Fazer Login</a></li>
+                    <li><a href="./index.php">Fazer Login</a></li>
                 </ul>
             </nav>
 
@@ -65,10 +65,7 @@
         <div class="modal">
             <div class="conteudo-modal">
                 <span class="fechar-modal">x</span>
-                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Cb4WV4aXBpk"
-                    title="trailer oficial" frameborder="1"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Cb4WV4aXBpk" title="trailer oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </main>
