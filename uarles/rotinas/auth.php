@@ -7,7 +7,7 @@ $login_password = md5($_POST['login_password']);
 
 if (isset($_POST['login-btn'])) {
 
-    $select = "SELECT * FROM usuario WHERE nome = '$login_email'";
+    $select = "SELECT * FROM usuario WHERE usuario = '$login_email'";
     $query = mysqli_query($conn, $select);
     $row = mysqli_fetch_assoc($query);
     if ($row) {
