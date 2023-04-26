@@ -1,14 +1,10 @@
 <?php
 // database Connection
 $hostname = "localhost";
-$username = "u751391022_todophp";
+$username = "u751391022_gabriel";
 $password = "Admin123456";
-$db =  "u751391022_todophp";
+$db =  "u751391022_gabriel";
 
-//$hostname = "localhost";
-//$username = "root";
-//$password = "";
-//$db =  "todophp";
 try {
     $conn = new mysqli($hostname, $username, $password, $db);
 
