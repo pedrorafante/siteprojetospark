@@ -65,9 +65,24 @@ if (isset($_POST['enviar_button'])) {
     }
 }
 
-
+$email = $_POST['e-mail'];
 if (isset($_POST['recuperacao_button'])) {
-    echo "Entrou aki";
+    $select = "SELECT * FROM usuarios WHERE email = '$email'";
+    $query = mysqli_query($conn, $select);
+    $row = mysqli_fetch_assoc($query);
+    if (!$row) {
+        echo "<script>alert('E-mail não cadastrado!!'); window.location='../../index.php';</script>";
+    } else {
+        ini_set('display_erros', 1);
+        error_reporting(E_ALL);
+        $from = "pedro@projetospark.com.br";
+        $to = $row['email'];
+        $subj = "Recuperação de senha";
+        $mensagem = "E-mail enviado para recuperar a senha";
+        $headers = "From: " . $from;
+        mail($to, $subj, $mensagem, $headers);
+        echo "<script>alert('E-mail enviado com sucesso!'); window.location='../../index.php';</script>";
+    }
 }
 
 /*
