@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+ 
+ :root{
+  --color-light-50: #f8fafc;
+  --color-dark-50: #797984;
+  --color-dark-100: #312d37;
+  --color-dark-900: #000;
+
+  --color-green-50: #244d24;
+  --color-green-100: #318b41;
+  --color-green-200: #1ac93a;
+
+  --color-gradient: linear-gradient(90deg, var(--color-green-50), var(--color-green-100), var(--color-green-200));
+
+ }
+ 
+ *{
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+ }
+
+ #container {
+  height: 130vh;
+  width: 100%;
+  background: var(--color-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ #container_cad {
+  height: 130vh;
+  width: 100%;
+  background: var(--color-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ #container_rec {
+  height: 110vh;
+  width: 100%;
+  background: var(--color-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ #container_rec2{
+  height: 110vh;
+  width: 100%;
+  background: var(--color-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ #social_media img {
+  width: 35px;
+ }
+
+ #social_media img:hover {
+  transform:scale(1.2)
+ }
+
+ #social_media {
+  display: flex;
+  justify-content: space-around;
+ }
+
+ #login_form {
+  background-color: var(--color-light-50);
+display: flex;
+flex-direction: column;
+padding: 100px 40px;
+border-radius: 8px;
+gap: 30px;
+box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+height: fit-content;
+animation: dark-to-light 0.3s ease-in-out;
+}
+
+#cadastro_form {
+  background-color: var(--color-light-50);
+display: flex;
+flex-direction: column;
+padding: 30px 40px;
+border-radius: 8px;
+gap: 30px;
+box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+height: fit-content;
+animation: dark-to-light 0.3s ease-in-out;
+}
+#recuperacao2_form {
+  background-color: var(--color-light-50);
+display: flex;
+flex-direction: column;
+padding: 30px 40px;
+border-radius: 8px;
+gap: 30px;
+box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+height: fit-content;
+animation: dark-to-light 0.3s ease-in-out;
+}
+
+#recuperacao_form {
+  background-color: var(--color-light-50);
+display: flex;
+flex-direction: column;
+padding: 30px 40px;
+border-radius: 8px;
+gap: 30px;
+box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+height: fit-content;
+animation: dark-to-light 0.3s ease-in-out;
+}
+
+#form_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#form_header h1{
+  font-size: 40px;
+  position: relative;
+}
+
+#form_header h1::before {
+  position: absolute;
+  content:'';
+  width: 40%;
+  background-color: var(--color-green-200);
+  height: 3px;
+  bottom: 10px;
+  border-radius: 5px;
+}
+
+#mode_icon {
+  cursor:pointer;
+  font-size: 20px;
+}
+
+#inputs {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content:center;
+gap: 20px;
+}
+
+.input-box label{
+  font: size 14px;
+  color: var(--color-dark-50);
+}
+
+.input-field{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 3px;
+  cursor: text;
+  border-bottom: 1px solid var(--color-green-50);
+}
+
+.input-field i{
+  font-size:18px;
+  color: var(--color-dark-900)
+}
+
+.input-field input{
+  border:none;
+  background-color: transparent;
+  width: 260px;
+  font-size: 18px;
+  padding: 0px 5px;
+}
+
+.input-field input:focus{
+  outline: none;
+}
+
+
+#forgot-password a {
+  text-decoration: none;
+  font-size: 12px;
+  color: var(--color-dark-50);
+}
+
+#forgot-password a:hover {
+  color: var(--color-green-50);
+}
+
+#login_button{
+  border: none;
+background: var(--color-gradient);
+padding: 7px;
+font-size: 18px;
+border-radius: 3px;
+font-weight: bold;
+cursor:pointer;
+}
+#login_button:hover {
+  transform: scale(1.05);
+}
+
+#enviar_button{
+  border: none;
+background: var(--color-gradient);
+padding: 7px;
+font-size: 18px;
+border-radius: 3px;
+font-weight: bold;
+cursor:pointer;
+}
+#enviar_button:hover {
+  transform: scale(1.05);
+}
+
+#cadastro_button{
+  border: none;
+background: var(--color-gradient);
+padding: 7px;
+font-size: 18px;
+border-radius: 3px;
+font-weight: bold;
+cursor:pointer;
+}
+#cadastro_button:hover {
+  transform: scale(1.05);
+}
+
+#recuperacao_button{
+  border: none;
+ background: var(--color-gradient);
+ padding: 7px;
+ font-size: 18px;
+ border-radius: 3px;
+ font-weight: bold;
+ cursor:pointer;
+ }
+ #recuperacao_button:hover {
+  transform: scale(1.05);
+}
+
+#recuperacao2_button{
+  border: none;
+background: var(--color-gradient);
+padding: 7px;
+font-size: 18px;
+border-radius: 3px;
+font-weight: bold;
+cursor:pointer;
+}
+#recuperacao2_button:hover {
+  transform: scale(1.05);
+}
+
+.dark#login_form{
+  color: var(--color-light-50);
+  background-color: var(--color-dark-100);
+  animation: light-to-dark 0.3s ease-in-out;
+}
+
+.dark#login_form .input-field input,
+.dark#login_form .input-field i {
+  color: var(--color-light-50)
+}
+
+.dark#cadastro_form{
+  color: var(--color-light-50);
+  background-color: var(--color-dark-100);
+  animation: light-to-dark 0.3s ease-in-out;
+}
+
+.dark#cadastro_form .input-field input,
+.dark#cadastro_form .input-field i {
+  color: var(--color-light-50)
+}
+
+.dark#recuperacao_form{
+  color: var(--color-light-50);
+  background-color: var(--color-dark-100);
+  animation: light-to-dark 0.3s ease-in-out;
+}
+
+.dark#recuperacao_form .input-field input,
+.dark#recuperacao_form .input-field i {
+  color: var(--color-light-50)
+}
+
+.dark#recuperacao2_form{
+  color: var(--color-light-50);
+  background-color: var(--color-dark-100);
+  animation: light-to-dark 0.3s ease-in-out;
+}
+
+.dark#recuperacao2_form .input-field input,
+.dark#recuperacao2_form .input-field i {
+  color: var(--color-light-50)
+}
+
+@keyframes dark-to-light {
+  0% {
+background-color: var(--color-dark-100);
+   }
+   100%{
+    background-color: var(--color-light-50);
+   }
+}
+
+@keyframes light-to-dark {
+  
+  0%{
+    background-color: var(--color-light-50);
+   }
+  
+   100% {
+    background-color: var(--color-dark-100);
+       }
+      
+  
+}
+a:-webkit-any-link {
+  color: black;
+  cursor: pointer;
+  text-decoration:none;
+}
