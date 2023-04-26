@@ -11,20 +11,14 @@ if (isset($_POST['login-btn'])) {
     $query = mysqli_query($conn, $select);
     $row = mysqli_fetch_assoc($query);
     if ($row) {
-        echo "<script>alert('" . $login_password . "');</script>";
+        if ($row['senha'] == $login_password) {
+            echo "<script>alert('Login efetuado com sucesso!');</script>";
+        } else {
+            echo "<script>alert('Senha incorreta!!'); window.location='../index.php';</script>";
+        }
     } else {
-        echo "<script>alert('caralho');</script>";
+        echo "<script>alert('Usuário não encontrado!'); window.location='../index.php';</script>";
     }
-
-    // if ($row) {
-    //     if ($row['senha'] == $login_password) {
-    //         echo "<script>alert('Login efetuado com sucesso!');</script>";
-    //     } else {
-    //         echo "<script>alert('Senha incorreta!!'); window.location='../index.php';</script>";
-    //     }
-    // } else {
-    //     echo "<script>alert('Usuário não encontrado!'); window.location='../index.php';</script>";
-    // }
 }
 
 // ========== Cadastro de usuários  ==========
