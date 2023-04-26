@@ -1,6 +1,6 @@
 <?php
 
-
+include 'config.php';
 $email = $_POST["email"];
 
 $sql = "INSERT INTO newlaster (email) VALUES('{$email}')";

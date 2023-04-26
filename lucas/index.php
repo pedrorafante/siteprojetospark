@@ -1,7 +1,3 @@
-<?php
-include("config.php");
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -27,7 +23,9 @@ include("config.php");
     <div id="formulário">
       <h4><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         Receber notícias também por email:
-        <input type="email" id="email" name="email" required multiple> <input id="button" type="submit" value="Confirmar Email" onclick="ConfirmarEmail()" </h4>
+        <input type="email" id="email" name="email" required multiple>
+        <input id="button" type="submit" value="Confirmar Email" />
+      </h4>
   </form>
   <br><br>
   </div>
