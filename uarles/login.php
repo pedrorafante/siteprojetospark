@@ -20,10 +20,10 @@
 
     <div id="corpo-form">
         <h1>Entrar</h1>
-        <form method="POST">
-            <input type="email" placeholder="Usuário">
-            <input type="password" placeholder="Senha">
-            <input type="submit" value="ACESSAR">
+        <form method="POST" action="rotinas/auth.php">
+            <input type="email" name="login_email" id="login_email" placeholder="Usuário">
+            <input type="password" name="login_password" id="login_password" placeholder="Senha">
+            <input type="submit" id="login-btn" name="login-btn" value="ACESSAR">
             <a href="./cadastrar.php">Ainda não é inscrito? <strong>Cadastre-se!</strong></a>
 
         </form>

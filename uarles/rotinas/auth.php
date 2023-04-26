@@ -6,27 +6,18 @@ $login_email = $_POST['login_email'];
 $login_password = md5($_POST['login_password']);
 
 if (isset($_POST['login-btn'])) {
-    if (filter_var($login_email, FILTER_VALIDATE_EMAIL)) {
-        $select = "SELECT * FROM users WHERE email = '$login_email'";
-        $query = mysqli_query($conn, $select);
-        $row = mysqli_fetch_assoc($query);
-        if ($row) {
-            if ($row['password'] == $login_password) {
-                $_SESSION['username'] = $row['username'];
-                $_SESSION['user_id'] = $row['id'];
-                $_SESSION['email'] = $row['email'];
-                $_SESSION['status'] = $row['status'];
-                $_SESSION['logged_in'] = true;
 
-                header("location:http://projetospark.com.br/professor/home.php?username=$row[username]");
-            } else {
-                echo "<script>alert('Senha incorreta!!'); window.location='../index.php';</script>";
-            }
+    $select = "SELECT * FROM usuario WHERE nome = '$login_email'";
+    $query = mysqli_query($conn, $select);
+    $row = mysqli_fetch_assoc($query);
+    if ($row) {
+        if ($row['senha'] == $login_password) {
+            echo "<script>alert('Login efetuado com sucesso!');</script>";
         } else {
-            echo "<script>alert('Usuário não encontrado!'); window.location='../index.php';</script>";
+            echo "<script>alert('Senha incorreta!!'); window.location='../index.php';</script>";
         }
     } else {
-        echo "<script>alert('E-mail inválido!'); window.location='../index.php';</script>";
+        echo "<script>alert('Usuário não encontrado!'); window.location='../index.php';</script>";
     }
 }
 

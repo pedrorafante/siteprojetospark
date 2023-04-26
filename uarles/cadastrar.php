@@ -23,7 +23,7 @@
         <form method="POST" action="rotinas/auth.php">
             <input type="text" name="nome" id="nome" placeholder="Nome Completo">
             <input type="text" name="telefone" id="telefone" placeholder="Telefone">
-            <input type="email" name="email" id="email" placeholder="Usuário">
+            <input type="email" name="usuario" id="usuario" placeholder="Usuário">
             <input type="password" name="senha" id="senha" placeholder="Senha">
             <input type="password" name="c_senha" id="c_senha" placeholder="Confirmar Senha">
             <input type="submit" name="signup-btn" id="signup-btn" value="Cadastrar">
