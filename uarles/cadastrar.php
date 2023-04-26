@@ -20,13 +20,13 @@
 
     <div id="corpo-form-cad">
         <h1>Cadastrar Senha</h1>
-        <form method="POST">
-            <input type="text" placeholder="Nome Completo">
-            <input type="text" placeholder="Telefone">
-            <input type="email" placeholder="Usuário">
-            <input type="password" placeholder="Senha">
-            <input type="password" placeholder="Confirmar Senha">
-            <input type="submit" value="Cadastrar">
+        <form method="POST" action="rotinas/auth.php">
+            <input type="text" name="nome" id="nome" placeholder="Nome Completo">
+            <input type="text" name="telefone" id="telefone" placeholder="Telefone">
+            <input type="email" name="email" id="email" placeholder="Usuário">
+            <input type="password" name="senha" id="senha" placeholder="Senha">
+            <input type="password" name="c_senha" id="c_senha" placeholder="Confirmar Senha">
+            <input type="submit" name="signup-btn" id="signup-btn" value="Cadastrar">
             <a href="login.php"><strong>Fazer Login!</strong></a>
 
         </form>
