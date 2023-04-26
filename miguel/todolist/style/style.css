@@ -85,7 +85,7 @@ p{
     border: red 1px solid;
 }
 
-.novoContainer {
+.novoContainer, #tarefaHistorico{
     display: flex;
     justify-content: space-between;
     align-items: center;
