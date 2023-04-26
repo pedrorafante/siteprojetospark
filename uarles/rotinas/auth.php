@@ -10,7 +10,12 @@ if (isset($_POST['login-btn'])) {
     $select = "SELECT * FROM usuario WHERE usuario = '$login_email'";
     $query = mysqli_query($conn, $select);
     $row = mysqli_fetch_assoc($query);
-    echo "<script>alert('" . $row . "');</script>";
+    if ($row) {
+        echo "<script>alert('" . $login_password . "');</script>";
+    } else {
+        echo "<script>alert('caralho');</script>";
+    }
+
     // if ($row) {
     //     if ($row['senha'] == $login_password) {
     //         echo "<script>alert('Login efetuado com sucesso!');</script>";
