@@ -23,11 +23,11 @@ include("config.php");
       </ul>
     </nav>
   </header>
-  <form action="salvar.php" method="POST">
+  <form method="POST" action="salvar.php">
     <div id="formulário">
       <h4><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         Receber notícias também por email:
-        <input type="email" required multiple> <input id="button" type="submit" value="Confirmar Email" onclick="ConfirmarEmail()" </h4>
+        <input type="email" id="email" name="email" required multiple> <input id="button" type="submit" value="Confirmar Email" onclick="ConfirmarEmail()" </h4>
   </form>
   <br><br>
   </div>
