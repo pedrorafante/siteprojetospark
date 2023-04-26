@@ -23,7 +23,7 @@
         <nav>
           <div class="button">
             <button>
-              <a href="login.php">Login</a>
+              <a href="index.php">Login</a>
             </button>
           </div>
         </nav>

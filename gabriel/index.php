@@ -23,7 +23,7 @@
                 </div>
                 <nav>
                     <div class="button cadastro">
-                        <button><a href="Cadastro.php">Cadastro</a></button>
+                        <button><a href="cadastro.php">Cadastro</a></button>
                     </div>
                 </nav>
             </div>

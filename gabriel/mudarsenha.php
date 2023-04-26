@@ -104,7 +104,7 @@
           </button>
         </div>
         <div class="input-button">
-          <button><a href="login.php">Não</a></button>
+          <button><a href="index.php">Não</a></button>
         </div>
       </nav>
     </div>
