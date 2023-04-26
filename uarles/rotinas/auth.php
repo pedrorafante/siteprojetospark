@@ -38,7 +38,7 @@ $c_password = $_POST['c_senha'];
 $telefone = $_POST['telefone'];
 
 if (isset($_POST['signup-btn'])) {
-    if ($password == $c_password) {
+    if ($senha == $c_password) {
         $select = "SELECT * FROM usuario WHERE usuario = '$usuario'";
         $query = mysqli_query($conn, $select);
         $row = mysqli_fetch_assoc($query);
