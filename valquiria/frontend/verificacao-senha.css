@@ -11,8 +11,35 @@ html {
   h1{
     color: #fff;
     font-size: 25px;
+    font-family: 'Oxanium', cursive;
+    justify-content: center;
+    align-items: center;
   }
   
+h2{
+  font-family: 'Oxanium', cursive;
+  font-size: 20px;
+}
+
+fieldset{
+  border: 1px solid #ccc; /* borda com cor cinza */
+  border-radius: 5px; /* borda com cantos arredondados */
+  padding: 7px; /* espaçamento interno */
+  width: 800px; /* define a largura para 300 pixels */
+  height: 80px; /* define a altura para 200 pixels */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh; /* Define a altura da div do container para ocupar toda a altura da tela */
+}
+
+label{
+  font-family: 'Oxanium', cursive;
+}
+
   .login-box {
     position: absolute;
     top: 50%;
@@ -174,6 +201,14 @@ html {
   @media screen and (max-width: 1080px) {
     h1{
       font-size: 15px;
+    }
+    fieldset{
+      border: 1px solid #ccc; /* borda com cor cinza */
+      border-radius: 5px; /* borda com cantos arredondados */
+      padding: 7px; /* espaçamento interno */
+      width: 300px; /* define a largura para 300 pixels */
+      height: 60px; /* define a altura para 200 pixels */
+      
     }
   }
   
