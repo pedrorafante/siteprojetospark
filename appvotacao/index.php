@@ -68,6 +68,19 @@
                                 labels: {
                                     color: 'rgb(255, 99, 132)'
                                 }
+                            },
+                            datalabels: {
+                                backgroundColor: function(context) {
+                                    return context.dataset.backgroundColor;
+                                },
+                                borderColor: 'white',
+                                borderRadius: 25,
+                                borderWidth: 2,
+                                color: 'white',
+                                font: {
+                                    weight: 'bold'
+                                },
+                                formatter: Math.round
                             }
                         }
                     }
