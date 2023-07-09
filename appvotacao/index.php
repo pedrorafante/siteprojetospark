@@ -54,7 +54,9 @@
                 };
 
                 var graphTarget = $("#graph");
-
+                Chart.defaults.set('plugins.datalabels', {
+                    color: '#FE777B'
+                });
                 barGraph = new Chart(graphTarget, {
                     type: 'bar',
                     data: chartdata,
