@@ -74,7 +74,7 @@
                                 //     return context.dataset.backgroundColor;
                                 // },
                                 backgroundColor: 'white',
-                                borderColor: 'white',
+                                borderColor: 'black',
                                 borderRadius: 25,
                                 borderWidth: 2,
                                 color: 'black',
