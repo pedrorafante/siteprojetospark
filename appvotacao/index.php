@@ -27,7 +27,7 @@
         var barGraph;
         const showGraph = () => {
             {
-                var name = ['Grupo 1', 'Grupo 2', 'Grupo 3', 'Grupo 4'];
+                var name = ['Pata 7', 'Squad da Quebrada', 'Mango Joe', 'Soneca'];
                 var marks = [2, 2, 3, 5];
                 var backgroundColorConst = ['red', 'green', 'yellow', 'pink']
                 // $.post("data.php", function (data) {
@@ -56,7 +56,17 @@
 
                 barGraph = new Chart(graphTarget, {
                     type: 'bar',
-                    data: chartdata
+                    data: chartdata,
+                    options: {
+                        plugins: {
+                            legend: {
+                                display: false,
+                                labels: {
+                                    color: 'rgb(255, 99, 132)'
+                                }
+                            }
+                        }
+                    }
                 });
                 // });
             }
@@ -87,7 +97,7 @@
 
             })
         }
-        setInterval(updateData, 3000);
+        setInterval(updateData, 5000);
     </script>
 </body>
 
