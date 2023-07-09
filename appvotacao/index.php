@@ -70,13 +70,14 @@
                                 }
                             },
                             datalabels: {
-                                backgroundColor: function(context) {
-                                    return context.dataset.backgroundColor;
-                                },
+                                // backgroundColor: function(context) {
+                                //     return context.dataset.backgroundColor;
+                                // },
+                                backgroundColor: 'white',
                                 borderColor: 'white',
                                 borderRadius: 25,
                                 borderWidth: 2,
-                                color: 'white',
+                                color: 'black',
                                 font: {
                                     weight: 'bold'
                                 },
