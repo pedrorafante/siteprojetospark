@@ -74,8 +74,8 @@
                     console.log(data);
                     var j = 0;
                     for (var i in data) {
-                        console.log(data[i].votos);
-                        barGraph.data.datasets[0].data[j] = data[i].votos;
+                        console.log(data[i].VOTOS);
+                        barGraph.data.datasets[0].data[j] = data[i].VOTOS;
                         barGraph.update();
                         j++;
                         // name.push(data[i].student_name);
