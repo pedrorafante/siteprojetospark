@@ -29,8 +29,9 @@
         const showGraph = () => {
             {
                 var name = ['Pata 7', 'Squad da Quebrada', 'Mango Joe', 'Soneca'];
+
                 var marks = [2, 2, 3, 5];
-                var backgroundColorConst = ['red', 'green', 'yellow', 'pink']
+                var backgroundColorConst = ['#4354E7', '#FF882A', '#264131', '#87CEEB']
                 // $.post("data.php", function (data) {
                 //     console.log(data);
                 //     var name = [];
