@@ -15,7 +15,6 @@
             <div class="col-md-12">
                 <canvas id="graph"></canvas>
             </div>
-            <!-- <button onclick="teste()"> Sanfona </button> -->
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -30,26 +29,13 @@
             {
                 var name = ['Pata 7', 'Squad da Quebrada', 'Mango Joe', 'Soneca'];
 
-                var marks = [2, 2, 3, 5];
+                var marks = [0, 0, 0, 0];
                 var backgroundColorConst = ['#4354E7', '#FF882A', '#264131', '#87CEEB']
-                // $.post("data.php", function (data) {
-                //     console.log(data);
-                //     var name = [];
-                //     var marks = [];
-
-                //     for (var i in data) {
-                //         name.push(data[i].student_name);
-                //         marks.push(data[i].marks);
-                //     }
 
                 var chartdata = {
                     labels: name,
                     datasets: [{
-                        // label: 'Student Marks',
-                        backgroundColor: backgroundColorConst, //'green',
-                        // borderColor: '#46d5f1',
-                        // hoverBackgroundColor: '#CCCCCC',
-                        // hoverBorderColor: '#666666',
+                        backgroundColor: backgroundColorConst,
                         data: marks
                     }]
                 };
@@ -71,9 +57,6 @@
                                 }
                             },
                             datalabels: {
-                                // backgroundColor: function(context) {
-                                //     return context.dataset.backgroundColor;
-                                // },
                                 backgroundColor: 'white',
                                 borderColor: 'black',
                                 borderRadius: 25,
@@ -87,31 +70,34 @@
                         }
                     }
                 });
-                // });
             }
-        }
-
-        function teste() {
-            barGraph.data.datasets[0].data[2] = 50; // Would update the first dataset's value of 'March' to be 50
-            barGraph.update(); // Calling update now animates the position of March from 90 to 50.
         }
 
         var updateData = function() {
             $.ajax({
                 url: "data.php",
                 success: function(data) {
-                    console.log(data);
+                    var PATA7 = 0;
+                    var SQUAD_DA_QUEBRADA = 1;
+                    var MANGO_JOE = 2;
+                    var SONECA = 3;
+
                     var j = 0;
                     for (var i in data) {
-                        console.log(data[i].VOTOS);
-                        barGraph.data.datasets[0].data[j] = data[i].VOTOS;
+                        if (data[i].grupo == "PATA7") {
+                            j = PATA7;
+                        } else if (data[i].grupo == "SQUAD DA QUEBRADA") {
+                            j = SQUAD_DA_QUEBRADA;
+                        } else if (data[i].grupo == "MANGO JOE") {
+                            j = MANGO_JOE;
+                        } else if (data[i].grupo == "SONECA") {
+                            j = SONECA;
+                        }
+                        barGraph.data.datasets[0].data[j] = data[i].qtd;
                         barGraph.update();
                         j++;
-                        // name.push(data[i].student_name);
-                        // marks.push(data[i].marks);
                     }
-                    barGraph.update();
-                    // teste();
+                    // barGraph.update();
                 }
 
             })
