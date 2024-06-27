@@ -164,7 +164,7 @@
             <input type="text" id="username" placeholder="Usuário"> <p>
             <input type="password" id="password" placeholder="Senha"><p></p>
             <span class="toggle-password" onclick="togglePassword()">🐵Mostrar Senha</span><p></p>
-            <div class="g-recaptcha"  data-sitekey="6Ld8s_8pAAAAAKg-gap4HA65BLKcsVgFpRScpEIL"></div>
+            <div class="g-recaptcha"  data-sitekey="6Ld7GAMqAAAAAK3b-9CA_CI64xHVfGCGEgjErwom"></div>
             <button class="entrar" type="submit" onclick="return validar()">Entrar</button>
             <p id="error-message"></p>          
           </form> 
