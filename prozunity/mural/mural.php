@@ -225,7 +225,15 @@ const userPhotoContainer = document.getElementById("userPhotoContainer");
 circleElements.forEach(circle => {
     circle.addEventListener("click", function() {
         const imgSrc = this.getAttribute("data-img-src");
-        
+        fetch('banco_querys.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                    COD_ALUNO: 1,
+                    avatar: imgSrc
+            })
         userPhotoContainer.innerHTML = `<img src="${imgSrc}" alt="Foto do Usuário">`;
         modal.style.display = "none"; // Fecha a modal após a seleção
     });
