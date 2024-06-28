@@ -225,24 +225,7 @@ const userPhotoContainer = document.getElementById("userPhotoContainer");
 circleElements.forEach(circle => {
     circle.addEventListener("click", function() {
         const imgSrc = this.getAttribute("data-img-src");
-        <?php
-        include './conexao.php';
-        $sql = "UPDATE USUARIO SET IMAGEM_AVATAR = ? WHERE COD_ALUNO = ?";
-        $stmt = $conn->prepare($sql);
-        $COD_ALUNO = 'SANFONA';
-        $id = 1;
-        $stmt->bind_param('issss',$COD_ALUNO, $id);
-        // Executar a inserção
-        if ($stmt->execute()) {
-            echo json_encode(['status' => 'success']);
-        } else {
-            echo json_encode(['status' => 'error', 'message' => $stmt->error]);
-        }
-
-        // Fechar a conexão
-        $stmt->close();
-        $conn->close();
-        ?>
+        
         userPhotoContainer.innerHTML = `<img src="${imgSrc}" alt="Foto do Usuário">`;
         modal.style.display = "none"; // Fecha a modal após a seleção
     });
