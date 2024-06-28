@@ -5,6 +5,8 @@ $data = json_decode(file_get_contents('php://input'), true);
 
 $COD_ALUNO = $data['COD_ALUNO']; 
 $avatar = $data['avatar'];
+//Teste
+
 
 $sql = "UPDATE USUARIO SET IMAGEM_AVATAR = ? WHERE COD_ALUNO = ?";
         $stmt = $conn->prepare($sql);
