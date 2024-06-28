@@ -10,10 +10,6 @@ $login = $data['login'];
 $senha = $data['senha'];
 $email = $data['email'];
 
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("i", $id);
-
-
 $sqlConsulta = "SELECT * FROM USUARIO WHERE COD_ALUNO = ?";
 $stmtConsulta = $conn->prepare($sqlConsulta);
 $stmtConsulta->bind_param("i", $COD_ALUNO);
