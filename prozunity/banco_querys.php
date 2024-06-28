@@ -12,12 +12,12 @@ $email = $data['email'];
 
 $sqlConsulta = "SELECT * FROM USUARIO WHERE COD_ALUNO = ?";
 $stmtConsulta = $conn->prepare($sqlConsulta);
-$stmtConsulta->bind_param("i", $COD_ALUNO);
+$stmtConsulta->bind_param('i', $COD_ALUNO);
 
 $stmtConsulta->execute();
 $result = $stmtConsulta->get_result();
 // Verifica se algum resultado foi retornado
-if ($result->num_rows = 0) {
+if ($result->num_rows == 0) {
     // Preparar a SQL para inserção
     $sql = "INSERT INTO USUARIO (COD_ALUNO, nome, login, senha, email) VALUES (? , ?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
