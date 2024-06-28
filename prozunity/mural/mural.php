@@ -231,7 +231,7 @@ circleElements.forEach(circle => {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                    COD_ALUNO: 1,
+                    COD_ALUNO: 6,
                     avatar: imgSrc
             })
         userPhotoContainer.innerHTML = `<img src="${imgSrc}" alt="Foto do Usuário">`;
